@@ -1,0 +1,135 @@
+//color
+$backgroundColor: #f8f8f8;
+$backgroundColor: #f8f8f8;
+$titleColor: #333333;
+$yellowColor: #FFA200;
+$redColor: #e84947;
+$grayColor: #919497;
+$shadowColor: #e8e8eb;
+
+/*主字体颜色*/
+$fontColor: #F7431F;
+/*辅字体颜色*/
+$fontColor2: #989898;
+
+//font-size
+$titleSize: 0.7rem;
+$normalSize: 0.6rem;
+
+$f55: 0.55rem;
+$f6: 0.6rem;
+$f65: 0.65rem;
+$f7: 0.7rem;
+$f75: 0.75rem;
+$f8: 0.8rem;
+$f85: 0.85rem;
+$f9: 0.9rem;
+$f95: 0.95rem;
+$f10: 1rem;
+
+//my card
+$cardRadius: 10px;
+$cardPadding: 10px 10px;
+$cardBorder: 1px solid #e6e6e6;
+$cardBorder: 1px solid #eee;
+
+/*padding 左右两侧距离*/
+$spaceLF: 0.75rem;
+
+.last_msg {
+    padding: 10px 0;
+    text-align: center;
+    color: $grayColor;
+}
+
+.body_padding {
+    padding: 0 5%;
+}
+
+.btn_box {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 2rem;
+}
+
+.big_btn {
+    display: block;
+    border: none;
+    font-size: .75rem;
+    border-radius: 1rem;
+    width: 16.75rem;
+    height: 2rem;
+    margin: 10px auto;
+    padding: 10px 0;
+    background: linear-gradient(to right, #FE784F, #FF4E4C);
+    color: #fff;
+}
+
+.small_btn {
+    display: block;
+    border: none;
+    border-radius: 3px;
+    width: 30%;
+    padding: 10px 0;
+    background-color: $redColor;
+    color: #fff;
+}
+
+//My
+.row_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: $cardBorder;
+    padding: .75rem .75rem;
+    .next_icon {
+        margin-left: 0.45rem;
+    }
+    div {
+        text-align: right;
+    }
+}
+
+.prices_detail {
+    .symbol {
+        font-size: $f55;
+        margin-right: 0.1rem;
+    }
+    .big-price {
+        font-size: $f65;
+    }
+    .small-price {
+        font-size: 0.5rem;
+    }
+}
+
+//订单按钮
+.cancel_btn {
+    width: 3.7rem;
+    height: 1.4rem;
+    font-weight: 100;
+    font-size: .65rem;
+    color: rgba(152, 152, 152, 1);
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid rgba(152, 152, 152, 1)
+}
+
+.next_btn {
+    width: 3.7rem;
+    height: 1.4rem;
+    font-weight: 100;
+    font-size: .65rem;
+    color: #fff;
+    background: linear-gradient(to right, #FE784F, #FF4E4C);
+    border-radius: 30px;
+    border: none
+}
+
+/*商品图片大小*/
+$goodsW: 5.4rem;
+$goodsH: 4.65rem;
+[v-cloak]{display: none;}

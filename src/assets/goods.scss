@@ -1,0 +1,108 @@
+
+.goods-list {
+    position: relative;
+    z-index: 999;
+    margin-top: -2.05rem;
+    .shop-car-wrap {
+        background-color: #fff;
+        margin: 0 $spaceLF 0.6rem $spaceLF;
+        padding: 0.65rem 0 1.15rem 0;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.1rem 0.25rem 0 rgba(227, 230, 235, 1);
+    }
+
+    .goods-item-warp {
+        margin-bottom: 1.3rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .shops_title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.7rem;
+        padding: 0 0.5rem;
+        .shop_title {
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 0.1rem;
+                font-size: $f65;
+            }
+            img {
+                width: 0.75rem;
+                height: 0.7rem;
+            }
+        }
+    }
+
+    .goods-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 0.5rem;
+        .goods-img {
+            width: $goodsW;
+            height: $goodsH;
+            margin-right: 0.4rem;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                background: $backgroundColor;
+            }
+        }
+        .goods-info {
+            height: 4.65rem;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .goods-name {
+                font-size: $f65;
+                color: $titleColor;
+                line-height: 1.1rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .goods-spec {
+                height: 0.9rem;
+                font-size: $f55;
+                color: $fontColor2;
+                border-radius: 0.45rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .sepcs {
+                    padding:0 .85rem;
+                    border-radius: 2rem;
+                    background: rgba(246, 246, 246, 1);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    max-width: 10rem;
+                }
+            }
+            .count-choose {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .tit {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .goods-detele {
+        width: 60px;
+        text-align: center;
+        font-size: $f65;
+    }
+}
