@@ -43,7 +43,7 @@
                     </div>
                     <div class="after" :style="headStyle"></div>
                 </div>
-                <van-swipe :autoplay="2000" indicator-color="white" class="home-banner">
+                <van-swipe :autoplay="2000" indicator-color="blue" class="home-banner">
                     <van-swipe-item v-for="(item,index) in banner" class="banner_item" :key="index">
                         <img :src="item.strImageAddr"/>
                     </van-swipe-item>
@@ -169,8 +169,10 @@
                 t.$axios.post(t.$store.state.urlConfig.findBanner, {strWindowArea: t.cityName}).then(res => {
                     t.getFindWindowConfigure().then(t.getProductList);
                     if (res.data.data && res.data.data.length > 0) {
-                        t.banner = res.data.data[0].imageList;
-                        console.log(t.banner)
+                        // t.banner = res.data.data[0].imageList;
+                        // 上条注释数据赋值格式错误，重新赋值；
+                        t.banner = res.data.data;
+                        t.banner.length = t.banner.length >= 5 ? 5 : t.banner.length;
                     } else {
                         t.banner = [];
                         t.isRefresh = false;
