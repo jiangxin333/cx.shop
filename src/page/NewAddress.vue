@@ -20,7 +20,7 @@
 			<input type="text" v-model="detalAddress" maxlength="100"/>
 			<!--<img src="../assets/btn_28_next.png" class="next_icon"/>-->
 		</div>
-		
+
 		<van-popup v-model="cityShow"  position="bottom">
 			<div class="city_box">
 				<p class="city_box_title">配送至</p>
@@ -46,9 +46,9 @@
 				</div>
 			</div>
 		</van-popup>
-			
+
 		<van-checkbox v-model="defaultAddress" checked-color="#FF4E4C" class="checkbox">是否设为默认收货地址</van-checkbox>
-		
+
 		<div class="btn_box">
 			<button type="button" class="big_btn" @click="saveBtn">保存并使用</button>
 		</div>
@@ -58,7 +58,7 @@
 <script>
 	export default{
 		components:{
-			
+
 		},
 		data (){
 			return {
@@ -103,6 +103,7 @@
 			},
 			//城市联动
 			city1Click(name,id,city){
+                console.log(name,id,city);
 				let _this=this
 				_this.cityTxt_1=name
 				_this.city2JSON=city
@@ -156,7 +157,7 @@
 						this.cityStage=4
 						this.cityTxt_4=''
 						break;
-						
+
 				}
 			}
 		},
