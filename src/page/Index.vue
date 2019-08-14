@@ -92,12 +92,12 @@
                                             <div class="">
                                                 <span v-html="$options.filters.goodsDetailPrice(item.decPrice)"></span>
                                                 <del>¥{{item.decMarkprice}}</del>
-                                            </div> 
+                                            </div>
                                             <div class="btns">去看看</div>
                                         </div>
                                     </div>
                                 </div>
-                            </waterfall>
+                            </waterfall> 
                         </div>
                     </template>
                 </div>
