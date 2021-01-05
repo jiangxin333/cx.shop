@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@ionic-native/device": "^5.11.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "clipboard": "^2.0.4",
     "html2canvas": "^1.0.0-rc.3",
     "jsencrypt": "^3.0.0-rc.1",
